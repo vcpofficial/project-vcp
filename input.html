@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+      /* dark */
+      .mode {
+        float:right;
+      }
+      .change {
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+        margin-left: 8px;
+      }
+      .dark{
+        background-color: #222;
+        color: #e6e6e6;
+      } 
+      body {
+        background:
+        radial-gradient(at 30% 40%, #00ffff80 10%, transparent 74%),
+        radial-gradient(at 70% 60%, #0080ff80 10%, transparent 74%); 
+      }
+   </style>
+    <script src=
+ "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+   </script>
+   
+    <title>Input</title>
+  </head>
+  <body>
+      <nav class="shadow bg-body rounded navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <nav class="navbar bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="input.html">
+                <img src="google-voice.png" alt="" width="30" height="24">
+              </a>
+            </div>
+          </nav>
+          <a class="navbar-brand" href="index.html">VCP</a>
+          <button class="btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="index.html"><img src="home.png" alt="">Home</a>
+              </li>
+              <li class="nav-item px-3 ">
+                <a class="nav-link" href="about.html"><img src="about.png" alt="">About</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link nav-tabs active" href="input.html"  style="color: rgb(0, 0, 0);"><img src="voice-command.png" alt="">Input</a>
+              </li>
+              <!-- <li class="nav-item px-3">
+                <a class="nav-link" href="Info.html">Info</a>
+              </li> -->
+              <li class="nav-item px-3">
+                <a class="nav-link" href="Tutorials.html"><img src="video-tutorial.png" alt="">Tutorials</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="subscription.html"><img src="subscription3.png" alt="">    Subscription</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="contact.html"><img src="contact1.png" alt="">    Contact</a>
+              </li>
+            </ul>
+             <!-- dark -->
+
+<div class="mode "  style="padding-right: 100px;">
+  <span class="change">dark</span>
+</div>
+<script>
+    $( ".change" ).on("click", function() {
+    if( $( "body" ).hasClass( "dark" )) {
+        $( "body" ).removeClass( "dark" );
+        $( ".change" ).text( "dark" );
+    } else {
+        $( "body" ).addClass( "dark" );
+        $( ".change" ).text( "light" );
+    }
+});
+</script>
+          </div>
+        </div>
+      </nav>
+  
+      <br> <br> 
+      <h3 style="text-align:center;">-:Now you may say something:-</h3> <br>
+      <form action="pdf.php" method="post">
+        <div class="words" contenteditable>
+        
+            <textarea name="text" id="p" ></textarea>
+        </div>
+        <div class="colinput-12 py-4">
+          <button onclick="myfunction()" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <div>
+        <footer>
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.  <br> <br> <img src="call.png" alt=""> Toll-Free no -> 1800-123-123-142</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/login/"><img class="bi" width="24" height="24" src="facebook.png"><use xlink:href="#facebook"></use></img></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/accounts/login/"><img class="bi" width="24" height="24"src="instagram.png"><use xlink:href="#instagram"></use></img></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://twitter.com/i/flow/login"><img class="bi" width="24" height="24"src="twitter.png"><use xlink:href="#twitter"></use></img></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+  
+    </body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index23.js"></script>
+  </body>
+  
+</html>
